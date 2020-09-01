@@ -7,6 +7,6 @@ import org.springframework.web.bind.annotation.RestController;
 public class LimitConfigurationController {
     @RequestMapping("/limits")
     public LimitConfiguration retrieveLimitFromConfiguration() {
-        return new LimitConfiguration(10,20);
+        return new LimitConfiguration(11,20);
     }
 }
