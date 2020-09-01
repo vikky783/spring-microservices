@@ -9,11 +9,10 @@ public class LimitConfigurationController {
 
     private final Configuration configuration;
 
-   @Autowired
-   public LimitConfigurationController(Configuration configuration){
+    @Autowired
+    public LimitConfigurationController(Configuration configuration){
         this.configuration = configuration;
     }
-
     @RequestMapping("/limits")
     public LimitConfiguration retrieveLimitFromConfiguration() {
         return new LimitConfiguration(configuration.getMaximum(),configuration.getMinimum());
